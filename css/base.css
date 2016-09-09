@@ -1,0 +1,270 @@
+.social-menu>li>a {
+  font-size: 24px;
+  padding: 11px 0;
+}
+
+@font-face{
+  font-family:"AntennaRegular";
+  font-style: normal;
+  font-weight: normal;
+
+  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/regular/antennaregular.eot");
+ 
+  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/regular/antennaregular.eot?") format("embedded-opentype"),
+      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/regular/antennaregular.woff") format("woff"),
+      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/regular/antennaregular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family:"AntennaBlack";
+  font-style: normal;
+  font-weight: normal;
+  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/1ab9da94-2ce2-44e7-ab48-6d15380b8c97-2.eot");
+  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/1ab9da94-2ce2-44e7-ab48-6d15380b8c97-2.eot?") format("embedded-opentype"),
+      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/1ab9da94-2ce2-44e7-ab48-6d15380b8c97-3.woff") format("woff"),
+      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/1ab9da94-2ce2-44e7-ab48-6d15380b8c97-1.ttf") format("truetype");
+}
+
+
+.dim {
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: .7;
+    height: 100%;
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.hero {
+	position: relative;
+}
+
+.introduction {
+    z-index: 5;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    font-weight:bold;
+    text-align: center; 
+    margin-bottom:40px
+}
+
+.header {
+	/*border-bottom: 1px solid #333;*/
+	width: 90%;
+	padding: 0 10px 20px 10px;
+	margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.headline {
+    font-family:'AntennaBlack', sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+    letter-spacing: 2px;
+    line-height: 100%;
+    padding-bottom:3px;
+    color: #fff;
+}
+
+.subhead{
+    font-family:'AntennaRegular', serif;
+    font-size: 100%;
+    line-height: 120%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    max-width: 900px;
+    margin: auto;
+    color: #fff;
+}
+
+.chroncovers {
+   /* display: none;*/
+    min-height: 355px;
+}
+.column:nth-child(5){
+    clear:both !important;
+}
+.column:nth-of-type(5n+1) {
+    clear:none !important;
+}
+.medium-up-4 .column:nth-of-type(4){
+    clear:none !important;
+}
+.medium-up-4 .column:nth-of-type(4n+1){
+    clear:none !important;
+}
+.small-up-2 .column:nth-of-type(2){
+    clear:none !important;
+}
+.small-up-2 .column:nth-of-type(2n+1){
+    clear:none !important;
+}
+
+.column p {
+	font-family:'AntennaRegular', sans-serif;
+	line-height: 1.4;
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.img-wrapper {
+    max-height: 210px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+img.thumbnail {
+    width: 100%;
+    border: none;
+    margin-bottom: 5px;
+}
+    
+img.thumbnail:hover {
+    box-shadow: 2px 2px 4px 1px rgba(10,10,10,.2)
+}
+    
+h6 {
+    font-family: 'AntennaRegular', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+h5 {
+    font-family: 'AntennaRegular', sans-serif;
+    font-weight: 400;
+}
+
+.column a:link, .column a:visited {
+    color: black;
+}
+.column a:hover {
+    color: #C12020;
+}
+
+.date {
+ 	font-weight: bolder;
+ 	font-size: 14px;
+}
+
+.thumbnail:hover {
+    box-shadow: none;
+}
+
+.credits {
+  	margin: 30px auto;
+  	font-family: 'Antenna', sans-serif;
+  	font-size: 15px;
+  	text-align: center;
+  	margin-bottom: 40px; 
+ }
+ .credits a {
+    text-decoration: none;
+    color: gray; 
+}
+ .credits .group {
+    margin-bottom: 1em; 
+}
+ .credits .group p {
+    margin: 0 auto;
+    font-family: 'Antenna', sans-serif;
+    font-size: 15px; 
+    font-weight: bold;
+}
+.credits a:hover {
+    color: #C12020;
+}
+
+/* css for dropdowns */
+
+.dropdowns {
+    width: auto;
+    min-width: 250px;
+    overflow: auto;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Antenna', sans-serif;
+}
+
+.search-text {
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+#month {
+    width: auto;
+    min-width: 120px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+#day {
+    width: auto;
+    min-width: 75px;
+    text-align: center;
+}
+
+select {
+    color: black;
+}
+
+@media (max-width: 930px) {
+    .introduction {
+        position: static;
+    }
+
+    .dim {
+        display: none;
+    }
+
+    .headline{
+        color:#333;
+        text-shadow: none;
+        padding:0 10px;
+        margin-top: 20px;
+    }
+
+    .subhead {
+        color:#333;
+        text-shadow: none;
+        padding:0 15px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+     h1 {
+        font-size: 200%;
+    }
+
+    h2 { 
+        font-size: 150%; 
+    }
+
+    p {
+        font-size: 100%; 
+    }   
+     .introduction {
+        position: static;
+     }
+    .credits .group p {
+        font-size: 10px;
+    }
+    .credits {
+        font-size: 8px;
+    }
+ }
+
+ @media (max-width: 480px){
+     .column  {
+      min-height: 340px;
+    }
+}
+

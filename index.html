@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chron Covers</title>
+  <link rel="stylesheet" type="text/css" href="http://projects.sfchronicle.com/2016/chroncovers/css/custom-foundation.css?1" />
+  <link rel="stylesheet" type="text/css" href="http://projects.sfchronicle.com/2016/chroncovers/css/base.css?2" />
+  
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->  
+
+</head>
+<body class="page-index">
+
+
+
+
+
+
+<!-- intro -->
+
+<!-- <div class="header">
+ -->
+    <div class="hero">
+      <img src="http://projects.sfchronicle.com/2016/chroncovers/header_tower.jpg" width="100%">
+
+    <div class="introduction">
+      <!-- <div align="center"> -->
+        <h1 class="headline">Chronicle Covers</h1>
+        <p class="subhead">The San Francisco Chronicle came into existence more than 150 years ago as The Daily Dramatic Chronicle, “a daily record of affairs — local, critical and theatrical.” Chronicle Covers is a yearlong project that will highlight one classic Chronicle newspaper page from our archive every day for 366 days.</p>  
+   <!--  </div> -->
+    </div>
+
+    <div class="dim"></div>
+
+  </div>
+
+    <!-- end intro -->
+    
+    
+<!-- </div> -->
+
+
+
+<!-- intro -->
+
+<div class="dropdowns">
+  <span class="search-text">Search: </span>
+
+  <select onchange="monthChange()" id="month">
+    <option class="default" value="">Month</option>
+    <option value="Jan">January</option>
+    <option id="feb" value="Feb">February</option>
+    <option value="March">March</option>
+    <option class="m-30" value="April">April</option>
+    <option value="May">May</option>
+    <option class="m-30" value="June">June</option>
+    <option value="July">July</option>
+    <option value="Aug">August</option>
+    <option class="m-30" value="Sept">September</option>
+    <!-- <option value="Oct">October</option>
+    <option class="m-30" value="Nov">November</option>
+    <option value="Dec">December</option> -->
+  </select>
+
+  <select onchange="dayChange()" id="day">
+    <option class="default" value="">Day</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option class="d-28" value="30">30</option>
+    <option class="d-28" id="d-30" value="31">31</option>
+  </select>
+</div>
+
+
+<div class="off-canvas-wrapper" style="margin-top: 20px;">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+        <div class="off-canvas-content" data-off-canvas-content="">
+
+            <div id="covers">
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+ <hr>
+
+<div class="off-canvas-wrapper" style="margin-top: 15px;">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+        <div class="off-canvas-content" data-off-canvas-content="">
+           
+            <h5 style="text-align:center; font-weight:bolder">More from the Chronicle Vault</h5>
+            <div class="row small-up-2 medium-up-4 large-up-4">
+                <div class="column">
+                    <a href="http://www.sfchronicle.com/oursf/"><img class="thumbnail" src="http://projects.sfchronicle.com/2016/chroncovers/refer_oursf.jpg"></a>
+                    <a href="http://www.sfchronicle.com/oursf/"><h6>Peter Hartlaub's Our San Francisco</h6></a>
+                </div>
+                <div class="column">
+                    <a href="http://www.sfchronicle.com/thetakefromthearchive/"><img class="thumbnail" src="http://projects.sfchronicle.com/2016/chroncovers/refer_fta.jpg"></a>
+                    <a href="http://www.sfchronicle.com/thetakefromthearchive/"><h6>Bill Van Niekerken's From the Archive</h6></a>
+                </div>
+                <div class="column">
+                    <a href="http://www.sfchronicle.com/archive/"><img class="thumbnail" src="http://projects.sfchronicle.com/2016/chroncovers/refer_subscriber.jpg"></a>
+                    <a href="http://www.sfchronicle.com/archive/"><h6>Subscribers: Search our archive</h6></a>
+                </div>
+                <div class="column">
+                    <a href="http://sfchronicle.myshopify.com/collections/historical-prints-posters" target="_blank"><img class="thumbnail" src="http://projects.sfchronicle.com/2016/chroncovers/refer_store.jpg"></a>
+                    <a href="http://sfchronicle.myshopify.com/collections/historical-prints-posters" target="_blank"><h6>Chronicle Store: Get memorabilia</h6></a>
+                </div>
+            </div>
+            <div class="js-off-canvas-exit"></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- credits -->
+
+<div class="credits">
+      
+  <!-- Variables are name, email slug and twitter handle -->
+  
+  <hr> 
+  <div class="group">
+    <p>Executive producer</p>
+      <div class="entry">Tim O'Rourke &bull; 
+        <a href="mailto:torourke@sfchronicle.com">torourke@sfchronicle.com</a> &bull; 
+        <a href = "https://twitter.com/TimothyORourke" target="_blank">@timothyorourke</a>
+      </div>
+  </div>
+  <div class="group">
+    <p>Contributors</p>
+      <div class="entry">Jillian Sullivan</div>
+      <div class="entry">Bill Van Niekerken &bull; 
+        <a href="mailto:bvanniekerken@sfchronicle.com">bvanniekerken@sfchronicle.com</a> &bull; 
+        <a href = "https://twitter.com/bvnthv" target="_blank">@bvnthv</a>
+      </div>
+      <div class="entry">Michelle Devera &bull; 
+        <a href="mailto:mdevera@sfchronicle.com">mdevera@sfchronicle.com</a> &bull; 
+        <a href = "https://twitter.com/michelledevera" target="_blank">@michelledevera</a>
+      </div>
+      
+  </div>
+  <div class="group">
+    <p>Developers</p>
+      <div class="entry">Kimberly Chua &bull; 
+        <a href="mailto:kchua@sfchronicle.com">kchua@sfchronicle.com</a> &bull; 
+        <a href = "https://twitter.com/kimberlyachua" target="_blank">@kimberlyachua</a>
+      </div>
+      <div class="entry">Lucio Villa &bull; 
+        <a href="mailto:lvilla@sfchronicle.com">lvilla@sfchronicle.com</a> &bull; 
+        <a href = "https://twitter.com/luciovilla" target="_blank">@luciovilla</a>
+      </div>
+      <div class="entry">Clint Wirtanen &bull; 
+        <a href="mailto:cwirtanen@sfchronicle.com">cwirtanen@sfchronicle.com</a> &bull; 
+        <a href = "https://twitter.com/clintwirtanen" target="_blank">@clintwirtanen</a>
+      </div>
+      <div class="entry">Benjamin Din &bull; 
+        <a href="mailto:bdin@sfchronicle.com">bdin@sfchronicle.com</a> &bull; 
+        <a href = "https://twitter.com/benjamindin" target="_blank">@benjamindin</a>
+      </div>
+  </div>
+</div>
+      
+<!-- end credits -->
+
+
+
+
+<!-- DELETE jQuery before pasting into WCM -->
+
+
+
+
+<script src="http://projects.sfchronicle.com/2016/chroncovers/js/main.js?1"></script>
+
+
+
+</body>
+</html>
